@@ -9,6 +9,7 @@ import NextPage from './components/NextPage'
 const App = () => {
   const [data, setData] = useState([])
   const [page, setPage] = useState(1)
+  // const [search, setSearch] = useState("")
   const baseURL = 'https://rickandmortyapi.com/api/character/?page='
 
   // const addedSearch = `?page=${page}`
@@ -26,6 +27,25 @@ const App = () => {
       debugger
     })
   }, [page])
+
+
+  // const filterCharacter = () => {
+  //   const term = searchTerm.trim()
+  //     return data.filter(character => {
+  //       if(!term){
+  //         return character
+  //       }
+  //       if(character.name.toLowerCase().includes(term.toLocaleLowerCase())) {
+  //         return character
+  //       }
+  //     }
+  //   }
+
+  // const filterCharacter = () => {
+  //   const term = search.trim()
+  //   return data.fi
+  // }
+      
 
   // useEffect(() => {
   //   setData(savedResponse.results)
